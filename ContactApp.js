@@ -14,10 +14,10 @@ class ContactApp extends Component {
   render(){
     return(
       <div>
-        <SearchBar />
-        <ContactList contacts={this.props.contacts
-                      filterText={this.state.filterText} 
-                    } />
+      <SearchBar filterText={this.state.filterText}/>
+      <ContactList contacts={this.props.contacts}
+                   filterText={this.state.filterText}
+                   />
       </div>
 
     );
@@ -26,7 +26,8 @@ class ContactApp extends Component {
 
 
 ContactApp.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.object)
+  contacts: PropTypes.arrayOf(PropTypes.object),
+  filterText: PropTypes.string,
 }
 
 
