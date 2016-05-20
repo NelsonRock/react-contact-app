@@ -34,8 +34,6 @@ ContactApp.propTypes = {
   contacts: PropTypes.arrayOf(PropTypes.object),
   filterText: PropTypes.string,
 }
-
-
 let contacts = [
 { name: "Cassio Zen", email: "cassiozen@gmail.com" },
 { name: "Dan Abramov", email: "gaearon@somewhere.com" },

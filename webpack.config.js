@@ -1,7 +1,7 @@
 require("babel-polyfill");
 
 module.exports = {
-  entry: './ContactApp.js',
+  entry: './app/ContactApp.js',
   output: {
     path: __dirname,
     filename: 'bundle.js'
