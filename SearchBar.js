@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 class SearchBar extends Component {
   handleChange(event){
-    this.props.handlerUserInput(event.target.value)
+    this.props.onUserInput(event.target.value)
   }
   render(){
     return(
@@ -16,7 +16,7 @@ class SearchBar extends Component {
 }
 
 SearchBar.propTypes = {
-  handlerUserInput: PropTypes.func.isRequired,  
+  onUserInput: PropTypes.func.isRequired,
   filterText: PropTypes.string.isRequired,
 }
 
