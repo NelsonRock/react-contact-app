@@ -4,9 +4,14 @@ import { render } from 'react-dom';
 class SearchBar extends Component {
   render(){
     return(
-      <input type="search" placeholder="Search" />
+      <input type="search" placeholder="Search"
+                value={this.props.filterText}/>
     );
   }
+}
+
+SearchBar.propTypes = {
+    filterText: PropTypes.string.isRequired,
 }
 
 export default SearchBar;

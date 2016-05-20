@@ -5,11 +5,19 @@ import ContactList from './ContactList';
 import ContactItem from './ContactItem';
 //Main Component will render ContactList and a searchBar
 class ContactApp extends Component {
+  constructor(){
+    super();
+    this.state = {
+      filterText: ''
+    }
+  }
   render(){
     return(
       <div>
         <SearchBar />
-        <ContactList contacts={this.props.contacts} />
+        <ContactList contacts={this.props.contacts
+                      filterText={this.state.filterText} 
+                    } />
       </div>
 
     );
