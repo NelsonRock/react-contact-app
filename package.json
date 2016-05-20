@@ -21,7 +21,8 @@
   "dependencies": {
     "marked": "^0.3.5",
     "react": "^15.0.2",
-    "react-dom": "^15.0.2"
+    "react-dom": "^15.0.2",
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.9.0",
