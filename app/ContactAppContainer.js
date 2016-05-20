@@ -10,7 +10,16 @@ class ContactAppContainer extends Component {
       contacts: []
     }
   }
-
+  componentDidMount(){
+    fetch('./contacts.json')
+    .then((response) => response.json)
+    .then((responseData) => {
+      this.setState({ contacts: responseData});
+    })
+    .catch((error) => {
+      console.log('Error feteching and parsing data', error);
+    });
+  }
   render(){
     return(
       <ContactApp contacts={this.state.contacts} />
