@@ -4,7 +4,10 @@ import { render } from 'react-dom';
 
 class ContactList extends Component {
   render(){
-    let contacts = this.props.contacts;
+    //we use filter
+    let contacts = this.props.contacts.filter(
+      (contact) => contact.name.indexOf(this.props.filterText) !== -1
+    );
     return(
       <ul>
       {contacts.map(
