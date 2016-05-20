@@ -4,8 +4,8 @@ You will find the master branch is a React - Contact - App that will fetch data 
 
 - Stateful ContactApp Component - filterText state and handlerUserInput function as props to pure Component
 - Pure Components
-  * SearchBar
-  * ContactList
+  * SearchBar - handleChange with props from ContactApp
+  * ContactList - props filterText from ContactApp
   * ContactItem
 
 1. Component Lifecycle
