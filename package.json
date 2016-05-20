@@ -1,0 +1,35 @@
+{
+  "name": "react-contact-app",
+  "version": "1.0.0",
+  "description": "Contact app with React, Webpack, Babel",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/NelsonRock/react-contact-app\""
+  },
+  "keywords": [
+    "React",
+    "Node",
+    "Webpack",
+    "Babel"
+  ],
+  "author": "Nelson Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^0.3.5",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
