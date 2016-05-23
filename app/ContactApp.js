@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import SearchBar from './SearchBar';
 import ContactList from './ContactList';
 import ContactItem from './ContactItem';
+// import ContactAppContainer from './ContactAppContainer';
 //Main Component will render ContactList and a searchBar
 class ContactApp extends Component {
   constructor(){
@@ -35,4 +36,4 @@ ContactApp.propTypes = {
   filterText: PropTypes.string,
 }
 
-ReactDOM.render(<ContactApp contacts={contacts} />, document.getElementById('root'));
+export default ContactApp;

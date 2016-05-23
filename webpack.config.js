@@ -1,14 +1,18 @@
 require("babel-polyfill");
 
 module.exports = {
-  entry: './app/ContactApp.js',
+  devtool: 'eval-source-map',
+  entry: __dirname + '/app/ContactAppContainer.js',
   output: {
-    path: __dirname,
+    path: __dirname + '/public',
     filename: 'bundle.js'
   },
   devServer: {
+    contentBase: "./public",
     inline: true,
-    port: 3000
+    port: 3000,
+    historyApiFallback: true,
+    colors: true
   },
   module: {
     loaders: [
