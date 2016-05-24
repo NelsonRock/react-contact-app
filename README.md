@@ -6,8 +6,7 @@ npm install babel babel-preset-es5015 babel-preset-react babel-polyfill babel-lo
 npm install
 ```
 
-  >Important it's not ready  yet!  
-You will find the master branch is a React - Contact - App that will fetch data from an Api and we'll see lifecycle of Components.
+  >You will find the master branch is a React - Contact - App that will fetch data from an Api and we'll see lifecycle of Components.
 
 - Stateful ContactApp Component - filterText state and handlerUserInput function as props to pure Component
 - Pure Components
